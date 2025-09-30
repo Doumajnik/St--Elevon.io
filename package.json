@@ -1,0 +1,40 @@
+{
+   "name": "crawler-example",
+   "version": "0.0.1",
+   "description": "Apify crawler for Profesia.sk job listings",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/Doumajnik/St--Elevon.io.git"
+   },
+   "keywords": [
+      "crawler",
+      "apify",
+      "profesia",
+      "jobs",
+      "nodejs"
+   ],
+   "type": "module",
+   "engines": {
+      "node": ">=18.0.0"
+   },
+   "dependencies": {
+      "apify": "^3.4.5",
+      "crawlee": "^3.11.5",
+      "dotenv": "^16.6.1",
+      "puppeteer": "24.8.0"
+   },
+   "devDependencies": {
+      "@apify/eslint-config": "^0.4.0",
+      "chai": "^6.2.0",
+      "eslint": "^8.50.0",
+      "mocha": "^11.7.3"
+   },
+   "scripts": {
+      "start": "node src/main.js",
+      "lint": "eslint ./src --ext .js,.jsx",
+      "lint:fix": "eslint ./src --ext .js,.jsx --fix",
+      "test": "mocha src/tests/*.test.js"
+   },
+   "author": "Dominik Haspra",
+   "license": "ISC"
+}
